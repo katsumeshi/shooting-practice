@@ -24,4 +24,8 @@ public class UIController : MonoBehaviour {
 	void Update () {
 		scoreText.GetComponent<Text> ().text = "Score:" + score.ToString("D4");
 	}
+
+	void Awake() { 
+    	Application.targetFrameRate = 60;
+	}
 }
